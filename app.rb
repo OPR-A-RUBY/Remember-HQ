@@ -2,7 +2,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader'
-require 'sqlite3'
+require 'sinatra/activerecord'
 
 require_relative './helpers/for_db.rb' # Методы для работы с БАЗОЙ ДАННЫХ
 require_relative './helpers/initialize.rb' 
