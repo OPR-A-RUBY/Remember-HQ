@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2022_06_13_181746) do
 
-  create_table "persons", force: :cascade do |t|
+  create_table "people", force: :cascade do |t|
     t.text "name"
     t.text "b_date"
     t.text "d_date"
