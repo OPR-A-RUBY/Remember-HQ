@@ -10,7 +10,7 @@ require_relative './helpers/users.rb'
 
 set :database, "sqlite3:remebe_HQ.db"
 
-class Users < ActiveRecord::Base 
+class User < ActiveRecord::Base 
 end
 
 class Person < ActiveRecord::Base 
