@@ -17,7 +17,8 @@ class Person < ActiveRecord::Base
 end 
 
 get '/' do
-	erb "Hole"
+	@persons = Person.all 
+	erb :index
 end
 
 get '/about' do
