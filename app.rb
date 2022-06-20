@@ -24,3 +24,7 @@ end
 get '/about' do
 	erb :about
 end	
+
+get '/person_new' do
+  erb :person_new
+end
