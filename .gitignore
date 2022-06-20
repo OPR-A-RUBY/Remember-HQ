@@ -56,3 +56,4 @@ build-iPhoneSimulator/
 # .rubocop-https?--*
 
 remebe_HQ.db
+remebe_db.sqlite3

@@ -4,9 +4,9 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/activerecord'
 
-require_relative './helpers/for_db.rb' # Методы для работы с БАЗОЙ ДАННЫХ
-require_relative './helpers/persons.rb'
-require_relative './helpers/users.rb' 
+#require_relative './helpers/for_db.rb' # Методы для работы с БАЗОЙ ДАННЫХ
+#require_relative './helpers/persons.rb'
+#require_relative './helpers/users.rb' 
 
 set :database, "sqlite3:remebe_HQ.db"
 
@@ -25,6 +25,11 @@ get '/about' do
 	erb :about
 end	
 
-get '/person_new' do
+get '/person/new' do
+  @p = Person.new 	
   erb :person_new
+end
+
+post '/person/new' do
+  "Hello World"
 end
