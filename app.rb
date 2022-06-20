@@ -17,6 +17,7 @@ class Person < ActiveRecord::Base
 end 
 
 get '/' do
+  $user = User.find(1)
 	@persons = Person.all 
 	erb :index
 end
@@ -35,4 +36,8 @@ post '/person/new' do
   p.save
   @persons = Person.all	
   erb :index
+end
+
+get '/planes' do
+  erb :planes
 end
