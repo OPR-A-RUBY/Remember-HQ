@@ -14,7 +14,7 @@ class CreatePersons < ActiveRecord::Migration[5.2]
 		:name => 'НИКИПЕЛОВА Галина Николаевна',
 		:b_date => '02.09.1939', 
 		:d_date => '11.12.2021', 
-		:photo_link => '', 
+		:photo_link => 'pictures.png', 
 		:discription => 'Моя тётя, сестра моей мамы'
 	}) 
 
@@ -22,7 +22,7 @@ class CreatePersons < ActiveRecord::Migration[5.2]
   		:name => 'БАРАБАНЩИКОВ Александр Викторович', 
   		:b_date => 'нет данных', 
   		:d_date => '__.06.20__', 
-  		:photo_link => '', 
+  		:photo_link => 'screen-face.jpg', 
   		:discription => 'Мы вместе работали в БЭС. Мой учитель'
   	}) 	
 
