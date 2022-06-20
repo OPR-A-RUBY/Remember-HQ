@@ -7,6 +7,14 @@ class CreateUsers < ActiveRecord::Migration[5.2]
  		t.text :pass_guest
 
  		t.timestamps 
-  	end	
+  	end
+
+  	User.create ({
+		:name => 'Александр',
+		:login => 'Alersandr', 
+		:pass_main => '05n046pd', 
+		:pass_guest => 'qwerty'
+	}) 
+
   end
 end
