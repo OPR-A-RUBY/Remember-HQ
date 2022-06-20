@@ -26,10 +26,13 @@ get '/about' do
 end	
 
 get '/person/new' do
-  @p = Person.new 	
+  @p = Person.new
   erb :person_new
 end
 
 post '/person/new' do
-  "Hello World"
+  p = Person.new params[:human]
+  p.save
+  @persons = Person.all	
+  erb :index
 end
