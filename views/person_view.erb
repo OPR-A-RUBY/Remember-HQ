@@ -1,26 +1,44 @@
-    <h3>Index</h3> <!-- ( index.erb ) -->
+    <h3>Person_view</h3> <!-- ( index.erb ) -->
     <b style="color: rgb(256, 64, 128)" > I am: <%= $user.name %> </b>
     </br></br>
-    <h4>My Persons:</h4>
-    <table class="table table-bordered" > 
-      <thead class="table-primary">                       
-        <tr>                                                  
-          <th class="p-2 text-center table-primary" >ID</th>
-          <th class="p-2 text-center" >Фото</th>
-          <th class="p-2 text-center" >Имя</th>
-          <th class="p-2 text-center" >Рождение</th>
-          <th class="p-2 text-center" >Смерть</th>
-          <th class="p-2 text-center" >Примечание</th>        
-        </tr>
-      </thead>                            
-      <tbody>  
-        <tr>                          
-          <td class="p-2" align="center"> <%= @person['id']%> </td>
-          <td class="p-2" align="center"> <%= @person['photo_link']%> </td>
-          <td class="p-2" align="left">   <%= @person['name']%></a></td>
-          <td class="p-2" align="center"> <%= @person['b_date']%> </td>
-          <td class="p-2" align="center"> <%= @person['d_date']%> </td>
-          <td class="p-2" align="left">   <%= @person['discription']%> </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+      <button type="button" class="btn btn-outline-primary">Previous</button>
+      <button type="button" class="btn btn-outline-primary">Start now</button>
+      <button type="button" class="btn btn-outline-primary">Next Person</button>
+    </div>
+    </br></br> 
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <table class="table table-bordered" >                         
+            <tbody>  
+              <tr>                          
+                <td class="p-6" align="center">  
+                  <img src="..." class="img-thumbnail" alt="..."></br>
+                  <%= @person['photo_link']%> 
+                </td>
+              </tr>
+              <tr>
+                <td class="p-6" align="center"><h3><%= @person['name']%></h3></td>
+              </tr>
+              <tr>
+                <td class="p-6" align="center"><h4><%= @person['b_date']%> - <%= @person['d_date']%></h4></td>
+              </tr>  
+            </tbody>
+          </table>
+        </div>
+        <div class="col-6">
+          <p> <%= @person['discription']%> </p>
+        </div>
+      </div>
+    </div> 
+    <div>
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Delete</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button>
+    </div> 
