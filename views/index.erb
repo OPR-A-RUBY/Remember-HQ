@@ -1,16 +1,14 @@
-<h3>Список Персон</h3><!-- ( index.erb ) -->
-    <b style="color: rgb(256, 64, 128)" > I am: <%= $user.name %> </b>
-    </br></br>
+		<h5 align="right">View's filename: <i><b>index.erb</b></i></h5><!-- ( index.erb ) -->
     <h4>My Persons:</h4>
     <table class="table table-bordered" > 
       <thead class="table-primary">                       
         <tr>                                                  
           <th class="p-2 text-center table-primary" >ID</th>
-          <th class="p-2 text-center" >Фото</th>
-          <th class="p-2 text-center" >Имя</th>
-          <th class="p-2 text-center" >Рождение</th>
-          <th class="p-2 text-center" >Смерть</th>
-          <th class="p-2 text-center" >Примечание</th>        
+          <th class="p-2 text-center" >Photo</th>
+          <th class="p-2 text-center" >Name</th>
+          <th class="p-2 text-center" >By born</th>
+          <th class="p-2 text-center" >By dead</th>
+          <th class="p-2 text-center" >Discription</th>        
         </tr>
       </thead>                            
       <tbody> <% @persons.each do |item| %> 
