@@ -16,28 +16,29 @@ end
 class Person < ActiveRecord::Base 
 end 
 
-get '/' do
+get '/' do # ______________________________ Start Page
   $user = User.find(1)
 	@persons = Person.all 
 	erb :index
 end
 
-get '/about' do
+get '/about' do # _________________________ About
 	erb :about
 end	
 
-get '/person/new' do
+get '/person/new' do # ____________________ Create Person
   @p = Person.new
   erb :person_new
 end
 
-post '/person/new' do
+post '/person/new' do # ___________________ Save Person
   p = Person.new params[:human]
   p.save
   @persons = Person.all	
   erb :index
 end
 
-get '/planes' do
+
+get '/planes' do # ________________________ My planes
   erb :planes
 end
