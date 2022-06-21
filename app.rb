@@ -38,6 +38,10 @@ post '/person/new' do # ___________________ Save Person
   erb :index
 end
 
+get '/person/:id_person' do # _____________ View Person
+  @person = Person.find(params[:id_person])
+  erb :person_view
+end
 
 get '/planes' do # ________________________ My planes
   erb :planes

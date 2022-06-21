@@ -1,5 +1,5 @@
     <h3>Index</h3> <!-- ( index.erb ) -->
-    <b style="color: rgb(256, 64, 128)" > I am: <%= $user %> </b>
+    <b style="color: rgb(256, 64, 128)" > I am: <%= $user.name %> </b>
     </br></br>
     <h4>My Persons:</h4>
     <table class="table table-bordered" > 
@@ -13,15 +13,14 @@
           <th class="p-2 text-center" >Примечание</th>        
         </tr>
       </thead>                            
-      <tbody> <% @persons.each do |item| %> 
+      <tbody>  
         <tr>                          
-          <td class="p-2" align="center"> <%= item['id']%> </td>
-          <td class="p-2" align="center"> <p>Photo</p> </td>
-          <td class="p-2" align="left"><a href="/person/<%=item['id']%>"><%= item['name']%></a></td>
-          <td class="p-2" align="center"> <%= item['b_date']%> </td>
-          <td class="p-2" align="center"> <%= item['d_date']%> </td>
-          <td class="p-2" align="left">   <%= item['discription']%> </td>
+          <td class="p-2" align="center"> <%= @person['id']%> </td>
+          <td class="p-2" align="center"> <%= @person['photo_link']%> </td>
+          <td class="p-2" align="left">   <%= @person['name']%></a></td>
+          <td class="p-2" align="center"> <%= @person['b_date']%> </td>
+          <td class="p-2" align="center"> <%= @person['d_date']%> </td>
+          <td class="p-2" align="left">   <%= @person['discription']%> </td>
         </tr>
-      </tbody><% end %>
+      </tbody>
     </table>
-    <div> <a href="/person/new">New Person</a> </div>
