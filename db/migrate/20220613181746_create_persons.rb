@@ -20,11 +20,11 @@ class CreatePersons < ActiveRecord::Migration[5.2]
     }) 
 
     Person.create ({
-      :name => 'ОПРЕДЕЛЕНЦЕВА Степан Алексеевич',
+      :name => 'ОПРЕДЕЛЕНЦЕВ Степан Алексеевич',
       :b_date => '__.__.19__', 
       :d_date => '__.__.19__', 
-      :photo_link => '0m_.jpg', 
-      :discription => 'Моя дед по отцовской линии.'
+      :photo_link => '2_.jpg', 
+      :discription => 'Мой дед по отцовской линии.'
     }) 
 
     Person.create ({
@@ -63,7 +63,7 @@ class CreatePersons < ActiveRecord::Migration[5.2]
       :b_date => '__.__.19__', 
       :d_date => '__.__.19__', 
       :photo_link => '0m_.jpg', 
-      :discription => 'Моя двоюродный брат.'
+      :discription => 'Мой двоюродный брат.'
     }) 
 
   	Person.create ({
@@ -71,7 +71,7 @@ class CreatePersons < ActiveRecord::Migration[5.2]
   		:b_date => 'нет данных', 
   		:d_date => '__.06.20__', 
   		:photo_link => '0m_.jpg', 
-  		:discription => 'Мы вместе работали в БЭС. Мой учитель'
+  		:discription => 'Мы вместе работали в БЭС. Мой второй учитель по компьютеру.'
   	}) 	
 
   end
