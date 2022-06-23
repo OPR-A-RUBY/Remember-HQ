@@ -1,0 +1,4 @@
+function myflash()
+{
+	alert('Hello!');
+}
