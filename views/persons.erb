@@ -1,7 +1,8 @@
-<h4>My Persons:</h4>
-<% @persons.each do |item| %>
-	<% item.each do |key, value| %> 
-		<%= "#{key}: #{value}" %> </br>
-	<% end %></br>
-<% end %>
-<div>
+		<h5 align="right">View's filename: <i><b>persons.erb</b></i></h5>
+		<h4>My Persons:</h4>
+		<% @persons.each do |item| %>
+			<% item.each do |key, value| %> 
+				<%= "#{key}: #{value}" %> </br>
+			<% end %></br>
+		<% end %>
+		<div>
