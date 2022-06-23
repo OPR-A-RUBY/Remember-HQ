@@ -14,7 +14,7 @@ class CreatePersons < ActiveRecord::Migration[5.2]
 		:name => 'НИКИПЕЛОВА Галина Николаевна',
 		:b_date => '02.09.1939', 
 		:d_date => '11.12.2021', 
-		:photo_link => 'pictures.png', 
+		:photo_link => '1_.jpg', 
 		:discription => 'Моя тётя, сестра моей мамы'
 	}) 
 
