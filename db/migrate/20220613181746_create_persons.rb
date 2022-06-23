@@ -15,7 +15,7 @@ class CreatePersons < ActiveRecord::Migration[5.2]
       :name => 'ОПРЕДЕЛЕНЦЕВ Виктор Степанович',
       :b_date => '11.02.1936', 
       :d_date => '15.11.2003', 
-      :photo_link => '1_.jpg', 
+      :photo_link => '0m_.jpg', 
       :discription => 'Мой отец.'
     }) 
 
@@ -23,7 +23,7 @@ class CreatePersons < ActiveRecord::Migration[5.2]
       :name => 'ОПРЕДЕЛЕНЦЕВА Степан Алексеевич',
       :b_date => '__.__.19__', 
       :d_date => '__.__.19__', 
-      :photo_link => '2_.jpg', 
+      :photo_link => '0m_.jpg', 
       :discription => 'Моя дед по отцовской линии.'
     }) 
 
@@ -31,14 +31,14 @@ class CreatePersons < ActiveRecord::Migration[5.2]
       :name => 'ОПРЕДЕЛЕНЦЕВА Аграфена Васильевна',
       :b_date => '28.05.1900', 
       :d_date => '08.03.1982', 
-      :photo_link => '3_.jpg', 
+      :photo_link => '0w_.jpg', 
       :discription => 'Моя бабушка по отцовской линии.'
     }) 
     Person.create ({
       :name => 'ПАНКОВ Николай Петрович',
       :b_date => '22.05.1915', 
       :d_date => '20.04.1990', 
-      :photo_link => '4_.jpg', 
+      :photo_link => '0m_.jpg', 
       :discription => 'Мой дед по материнской линии.'
     }) 
 
@@ -46,7 +46,7 @@ class CreatePersons < ActiveRecord::Migration[5.2]
       :name => 'ПАНКОВА Мария Тимофеевна',
       :b_date => '14.06.1914', 
       :d_date => '03.01.1995', 
-      :photo_link => '5_.jpg', 
+      :photo_link => '0w_.jpg', 
       :discription => 'Моя бабушка по материнской линии.'
     }) 
 
@@ -62,7 +62,7 @@ class CreatePersons < ActiveRecord::Migration[5.2]
       :name => 'ПЛАТОНОВ Валерий Николаевич',
       :b_date => '__.__.19__', 
       :d_date => '__.__.19__', 
-      :photo_link => '7_.jpg', 
+      :photo_link => '0m_.jpg', 
       :discription => 'Моя двоюродный брат.'
     }) 
 
@@ -70,7 +70,7 @@ class CreatePersons < ActiveRecord::Migration[5.2]
   		:name => 'БАРАБАНЩИКОВ Александр Викторович', 
   		:b_date => 'нет данных', 
   		:d_date => '__.06.20__', 
-  		:photo_link => '8_.jpg', 
+  		:photo_link => '0m_.jpg', 
   		:discription => 'Мы вместе работали в БЭС. Мой учитель'
   	}) 	
 
