@@ -9,6 +9,8 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
+/.My_Global_Person/
+/.My_Privat_Person/
 
 # Used by dotenv library to load environment variables.
 # .env
@@ -59,4 +61,3 @@ build-iPhoneSimulator/
 *.sqlite3
 *.jpg
 *.png
-Me_Privat_Folder/main_privat_person.rb
