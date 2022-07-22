@@ -22,6 +22,10 @@ get '/' do # ______________________________ Start Page
 	erb :index
 end
 
+get '/faq' do
+  erb :faq
+end
+
 get '/about' do # _________________________ About
 	erb :about
 end	
