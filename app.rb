@@ -47,6 +47,11 @@ get '/person/:id_person' do # _____________ View Person
   erb :person_view
 end
 
+get '/person/:id_person/edit' do # _____________ Edit Person
+  @person = Person.find(params[:id_person])
+  erb :person_edit
+end
+
 get '/planes' do # ________________________ My planes
   erb :planes
 end

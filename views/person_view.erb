@@ -31,9 +31,20 @@
       </div>
     </div> 
     <div>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/" >Home</a></li>
+        <li><a href="/person/<%=@person['id']%>/edit" class="px-2 link-success">Edit Person</a></li>
+        <li><a href="/person/delete" class="px-2 link-dark">Delete Person</a></li>
+        <li><a href="/faq" class="px-2 link-dark">FAQs</a></li>
+        <li><a href="/about" class="px-2 link-dark">About</a></li>
+        <li><a href="#" class="px-2 link-secondary">Ё</a></li>
+      </ul>
+      <p></p>
+    </div>  
+    <div>
       <button type="button" class="btn btn-outline-primary">Primary</button>
       <button type="button" class="btn btn-outline-secondary">Secondary</button>
-      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-success">Edit</button>
       <button type="button" class="btn btn-outline-danger">Delete</button>
       <button type="button" class="btn btn-outline-warning">Warning</button>
       <button type="button" class="btn btn-outline-info">Info</button>
