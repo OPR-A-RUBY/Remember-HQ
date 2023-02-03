@@ -21,7 +21,7 @@ def seed_db_Users db, users
         'name',
         'login',
         'pass_main',
-    	'pass_guest'
+        'pass_guest'
       ) 
       VALUES (
         ?, 
